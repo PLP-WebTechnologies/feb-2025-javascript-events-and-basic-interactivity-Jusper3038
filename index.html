@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vaib - Health News & Products</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body class="light-mode">
+  <div id="theme-toggle">
+    <i class="fas fa-moon" id="dark-mode-btn"></i>
+    <i class="fas fa-sun" id="light-mode-btn"></i>
+  </div>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Brown_and_White_Simple_Skincare_Logo__1_-removebg-preview.png" alt="Vaib Logo" class="logo-img" />
+        
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="wellness.html">Wellness</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="mobile-nav-toggle">☰</div>
+    </nav>
+  </header>
+
+  <div class="hero-section">
+    <div class="hero-content">
+      <h1>Your Health, <span class="highlight">Our Priority</span></h1>
+      <p>Discover the latest in health news, wellness products, and medical advancements.</p>
+      <a href="#products" class="cta-button">Explore Products</a>
+    </div>
+    <div class="hero-image">
+      <img src="vaib image.jpeg" alt="Medical Equipment" />
+    </div>
+  </div>
+
+  <main class="content">
+    <section class="intro">
+      <h1>Welcome to Vaib</h1>
+      <p>Your go-to source for the latest health news, tips, and quality wellness products.</p>
+    </section>
+
+    <section class="featured-equipment">
+      <h2 class="section-title">Featured Medical Equipment</h2>
+      <div class="equipment-slider">
+        <div class="equipment-card">
+          <div class="equipment-image">
+            <img src="/api/placeholder/300/200" alt="Advanced Stethoscope" />
+          </div>
+          <h3>Digital Stethoscope Pro</h3>
+          <p>Advanced heart and lung monitoring with AI-assisted diagnosis.</p>
+        </div>
+        <div class="equipment-card">
+          <div class="equipment-image">
+            <img src="/api/placeholder/300/200" alt="Blood Pressure Monitor" />
+          </div>
+          <h3>Smart BP Monitor</h3>
+          <p>Wireless connectivity and trend analysis for heart health management.</p>
+        </div>
+        <div class="equipment-card">
+          <div class="equipment-image">
+            <img src="/api/placeholder/300/200" alt="Pulse Oximeter" />
+          </div>
+          <h3>Premium Pulse Oximeter</h3>
+          <p>Accurate SpO2 and pulse rate monitoring with smartphone integration.</p>
+        </div>
+        <div class="equipment-card">
+          <div class="equipment-image">
+            <img src="/api/placeholder/300/200" alt="Smart Scale" />
+          </div>
+          <h3>AI Body Composition Scale</h3>
+          <p>Comprehensive body metrics with personalized health insights.</p>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button id="prev-slide"><i class="fas fa-chevron-left"></i></button>
+        <div class="slider-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <button id="next-slide"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </section>
+
+    <section id="products" class="grid-container">
+      <div class="card">
+        <i class="fas fa-newspaper card-icon"></i>
+        <h2>Health News</h2>
+        <p>Stay informed with the latest developments in medicine, nutrition, and mental health.</p>
+        <a href="news.html" class="btn">Read News</a>
+      </div>
+      <div class="card">
+        <i class="fas fa-pills card-icon"></i>
+        <h2>Wellness Products</h2>
+        <p>Explore curated supplements, skincare, and natural remedies recommended by experts.</p>
+        <a href="products.html" class="btn">Shop Now</a>
+      </div>
+      <div class="card">
+        <i class="fas fa-apple-alt card-icon"></i>
+        <h2>Nutrition Tips</h2>
+        <p>Discover healthy recipes and diet tips to boost your immunity and energy levels.</p>
+        <a href="nutrition.html" class="btn">Read Blog</a>
+      </div>
+      <div class="card">
+        <i class="fas fa-spa card-icon"></i>
+        <h2>Lifestyle & Mind</h2>
+        <p>Read about mindfulness, stress management, and healthy living habits.</p>
+        <a href="lifestyle.html" class="btn">Explore More</a>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2 class="section-title">What Our Customers Say</h2>
+      <div class="testimonial-container">
+        <div class="testimonial">
+          <div class="testimonial-rating">★★★★★</div>
+          <p>"Vaib's health newsletter has transformed my approach to wellness. Their product recommendations are always spot-on!"</p>
+          <div class="testimonial-author">— Sarah M., Fitness Instructor</div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-rating">★★★★★</div>
+          <p>"The medical equipment guide helped me choose the perfect blood pressure monitor. Customer service was exceptional."</p>
+          <div class="testimonial-author">— Dr. James Wilson</div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-rating">★★★★★</div>
+          <p>"Their nutrition articles are evidence-based and practical. I've implemented many of their suggestions with great results."</p>
+          <div class="testimonial-author">— Lisa T., Nutritionist</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <h2>📬 Subscribe to Our Newsletter</h2>
+      <p>Get the latest health updates and exclusive product offers delivered to your inbox.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+    
+    <section class="interactions">
+      <button id="changeTextBtn">Change Theme</button>
+      <button id="toggleCardBtn">Add/Remove Card</button>
+      <button id="animateBtn">Animate Cards</button>
+    </section>
+    
+  </main>
+
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Contact Us</h2>
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>123 Health Avenue, Wellness District, NY 10001</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p>+1 (555) 123-4567</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>info@vaibhealth.com</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="contact-form-container">
+        <h3>Send Us a Message</h3>
+        <form class="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Subject">
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div id="chatbot-container" class="chatbot-collapsed">
+    <div class="chatbot-header">
+      <div class="chatbot-title">
+        <i class="fas fa-robot"></i> Vaib Health Assistant
+      </div>
+      <div class="chatbot-controls">
+        <button id="minimize-chatbot"><i class="fas fa-minus"></i></button>
+        <button id="close-chatbot"><i class="fas fa-times"></i></button>
+      </div>
+    </div>
+    <div class="chatbot-messages">
+      <div class="bot-message">
+        <i class="fas fa-robot bot-avatar"></i>
+        <div class="message-content">Hello! I'm your Vaib Health Assistant. How can I help you today?</div>
+      </div>
+      <!-- Chat messages will appear here -->
+    </div>
+    <div class="chatbot-input">
+      <input type="text" id="chat-input" placeholder="Type your question...">
+      <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+  
+  <div class="chatbot-toggle">
+    <button id="open-chatbot">
+      <i class="fas fa-comment-medical"></i>
+      <span>Chat with us</span>
+    </button>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h3>About Vaib</h3>
+        <p>Dedicated to providing the latest in health information and quality wellness products since 2020.</p>
+      </div>
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-section newsletter-mini">
+        <h3>Stay Updated</h3>
+        <form class="footer-newsletter">
+          <input type="email" placeholder="Your email">
+          <button type="submit"><i class="fas fa-arrow-right"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Vaib. All rights reserved. | Health is Wealth</p>
+    </div>
+  </footer>
+  
+  <button id="back-to-top" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+  
+  <script src="script.js"></script>
+</body>
+</html>
